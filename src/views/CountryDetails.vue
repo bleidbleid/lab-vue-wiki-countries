@@ -2,7 +2,7 @@
     <h1>{{countryInfo.name.common}}</h1>
     <p>Capital {{countryInfo.capital}}</p>
     <p>Area {{countryInfo.area}}</p>
-    <p>Area {{countryInfo.area}}</p>
+    <p>Borders {{countryInfo.borders}}</p>
 
     <img src="" alt="">
 </template>
