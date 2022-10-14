@@ -1,9 +1,9 @@
 <template>
-    <h1>{{countryInfo.name.common}}</h1>
+    <h1 class="title">{{countryInfo.name.common}}</h1>
   <img :src="`https://flagpedia.net/data/flags/icon/72x54/${countryInfo.alpha2Code.toLowerCase()}.png`">
-  <p>Capital {{countryInfo.capital}}</p>
-  <p>Area {{countryInfo.area}}</p>
-  <p>Borders {{countryInfo.borders}}</p>
+  <p class="title is-4">Capital {{countryInfo.capital}}</p>
+  <p class="title is-4">Area {{countryInfo.area}}</p>
+  <p class="title is-4">Borders {{countryInfo.borders}}</p>
 </template>
 <script setup>
 import { ref, watch } from 'vue';
