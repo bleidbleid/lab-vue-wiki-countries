@@ -1,8 +1,8 @@
 <template>
     <Navbar />
-    <CountriesList />
-    <CountryDetails />
+    <router-view/>
 </template>
+
 <script setup>
 import Navbar from './components/Navbar.vue'
 import CountriesList from './views/CountriesList.vue'

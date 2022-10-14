@@ -1,20 +1,21 @@
 // src/router.js
 import { createRouter, createWebHistory } from 'vue-router';
 
+
 const routes = [
+
   {
     path: '/',
-    name: 'countries',
-    component: () => import(/* webpackChunkName: 'list' */ '../views/CountriesList.vue'),
+    name: 'list',
+    component: () => import('../views/CountriesList.vue'),
     children: [
       {
-        path: ':code',
+        path: 'list/:code',
         name: 'details',
-        component: () => import(/* webpackChunkName: 'details' */ '../views/CountriesDetails.vue')
-      },
-    ]
-  }
-];
+        component: () => import('../views/CountryDetails.vue'),
+      }
+    ],
+  }]
 
 const router = createRouter({
   history: createWebHistory('/'),
