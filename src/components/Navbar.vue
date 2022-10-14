@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item has-text-weight-semibold" href="/">
-                        WikiCountries
+                        LAB - WikiCountries
                     </a>
                 </div>
             </div>
