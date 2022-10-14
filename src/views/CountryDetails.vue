@@ -1,7 +1,9 @@
 <template>
     <h1>{{countryInfo.name.common}}</h1>
     <p>Capital {{countryInfo.capital}}</p>
-    <!-- <p>Area {{countryInfo.area[0]}}</p> -->
+    <p>Area {{countryInfo.area}}</p>
+    <p>Area {{countryInfo.area}}</p>
+
     <img src="" alt="">
 </template>
 <script setup>
