@@ -1,6 +1,6 @@
 <template>
     <div class="flex-comp">
-        <div>
+        <div id="global">
 
             <div v-for="country in countries" class="section">
                 <ul>
@@ -30,4 +30,9 @@ import countries from '../assets/countries.json'
 .flex-comp {
     display: flex;
 }
+
+#global {
+    height: 100vh;
+    overflow-x: hidden;
+  overflow-y: scroll;}
 </style>
