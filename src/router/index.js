@@ -1,21 +1,21 @@
 // src/router.js
 import { createRouter, createWebHistory } from 'vue-router';
 
-
 const routes = [
-
   {
     path: '/',
-    name: 'list',
-    component: () => import('../views/CountriesList.vue'),
+    name: 'countries',
+    component: () => import(/* webpackChunkName: 'list' */ '../views/CountriesList.vue'),
+    // Si hay children el componente de esta ruta tiene que tener un router-view
     children: [
       {
-        path: 'list/:code',
+        path: ':code',
         name: 'details',
-        component: () => import('../views/CountryDetails.vue'),
-      }
-    ],
-  }]
+        component: () => import(/* webpackChunkName: 'details' */ '../views/CountriesDetails.vue')
+      },
+    ]
+  }
+];
 
 const router = createRouter({
   history: createWebHistory('/'),
