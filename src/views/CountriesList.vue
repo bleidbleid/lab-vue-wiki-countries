@@ -27,6 +27,10 @@
 import countries from '../assets/countries.json'
 </script>
 <style>
+.section {
+    width: 600px;
+}
+
 .flex-comp {
     display: flex;
 }
@@ -34,5 +38,6 @@ import countries from '../assets/countries.json'
 #global {
     height: 100vh;
     overflow-x: hidden;
-  overflow-y: scroll;}
+    overflow-y: scroll;
+}
 </style>
